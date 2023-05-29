@@ -1,0 +1,47 @@
+.region-wrapper {
+  .vn_city_title {
+    font-size: 23px;
+    font-weight: bold;
+  }
+
+  .regions {
+    &:hover {
+      path {
+        stroke: black;
+        stroke-width: 3px;
+        stop-opacity: 1;
+        cursor: pointer;
+      }
+    }
+
+    &.region-active {
+      stroke: black;
+      stroke-width: 3px;
+      stop-opacity: 1;
+      cursor: pointer;
+    }
+  }
+}
+
+.region-province-wrapper {
+  .vn_city_title {
+    font-size: 17px;
+    font-weight: bold;
+  }
+
+  .regions {
+    path {
+      cursor: pointer;
+
+      &:hover {
+        opacity: 0.8 !important;
+        fill: darkolivegreen !important;
+      }
+
+      &.province-active {
+        opacity: 0.8 !important;
+        fill: darkolivegreen !important;
+      }
+    }
+  }
+}
